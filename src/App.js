@@ -14,7 +14,7 @@ export default class App{
         this.scene = new THREE.Scene();
         this.camera = new THREE.PerspectiveCamera(75, window.innerWidth/ window.innerHeight,0.1,1000);
         this.camera.position.set(0,20,60)
-        this.renderer = new THREE.WebGLRenderer({canvas:this.canvas})
+        this.renderer = new THREE.WebGLRenderer({canvas:this.canvas, antialias:true})
 
         this.pointer = new THREE.Vector2();
         this.setUpLights();
@@ -25,7 +25,6 @@ export default class App{
         this.setUpGUI()
         // From Portfolio
         this.torusSetup()
-        document.body.onscroll=this.onUpdate
     }
     render(){
         // this.orbitControl.update()
@@ -36,7 +35,7 @@ export default class App{
         
         // From Portfolio
         this.control()
-        this.scroll()
+        // this.scroll()
     }
     resize(){
         this.camera.aspect = window.innerWidth/window.innerHeight;

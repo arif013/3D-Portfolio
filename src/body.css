@@ -5,12 +5,16 @@
     height: 35vw;
     font-size: 30px;
     margin-bottom: 100px;
+    
 }
 .intro{
     position: relative;
     top: 40%;
     left: 20%;
     vertical-align: middle;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
 }
 .creative{
     font-family: var(--font1);
@@ -19,5 +23,8 @@
 .heading2{
     height: 35vw;
     text-align: center;
+}
+.heading2-title{
     font-size: 60px;
+    
 }
