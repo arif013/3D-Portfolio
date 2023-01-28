@@ -25,6 +25,11 @@ export default class App{
         this.setUpGUI()
         // From Portfolio
         this.torusSetup()
+
+        // From ShowData.js
+        this.education()
+        // this.data()
+        
     }
     render(){
         // this.orbitControl.update()
