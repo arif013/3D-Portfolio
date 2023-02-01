@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +16,7 @@
     --font3: 'Kanit', sans-serif;
     --font4: 'Concert One', cursive;
     --font5: 'Hammersmith One', sans-serif;
+    --font6: 'Acme', sans-serif;
 }
 
 html,
@@ -52,7 +55,7 @@ main {
     display: flex;
     justify-content: space-between;
     position: sticky;
-    background-color: #808080;
+    background-color: rgb(5, 5, 110);
     border-radius: 10px;
     padding: 10px;
 }
@@ -64,6 +67,10 @@ main {
 .points ul li{
     padding: 7px ;
     font-size: 18px;
+}
+.points ul a{
+    text-decoration: none;
+    color: white;
 }
 .icons{
     padding: 10px;

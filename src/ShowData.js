@@ -13,11 +13,11 @@ export default class ShowData extends Portfolio{
             innerEducation.innerHTML+=`
             <li class="listOfProjects">
             <div class="card" style="width: 18rem;">
-            <img class="card-img-top" style="width:286px; height: 180px" src='${projects[i].image} 'alt="Card image cap">
+            <img class="card-img-top" style="width:286px; height: 180px; border-radius:10px" src='${projects[i].image} 'alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title" style="font-size: 25px;">${projects[i].name}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">${projects[i].description}</h6>
-              <a url='${projects[i].livePreview}' target=_blank class="btn btn-primary">Click me</a>
+              <h6 class="card-subtitle mb-2 text-muted" style="font-size:15px">${projects[i].description}</h6>
+              <a href='${projects[i].livePreview}' target=_blank class="btn btn-primary">Click me</a>
              
           </div></li>
             `;

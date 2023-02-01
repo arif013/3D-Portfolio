@@ -40,7 +40,7 @@ export default class App{
         
         // From Portfolio
         this.control()
-        // this.scroll()
+        this.scroll()
     }
     resize(){
         this.camera.aspect = window.innerWidth/window.innerHeight;

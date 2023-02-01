@@ -4,7 +4,7 @@ export const projects = [
         name: 'Cubes with Threejs',
         image: '../assets/cubes-with-threejs.png',
         description: 'A fun project using 3D package Threejs with Tweenjs animation',
-        livePreview: "\'https://cubewiththreejs.surge.sh/\'"
+        livePreview: 'https://cubewiththreejs.surge.sh/'
     },
     {
         name: 'Collision using Cannonjs',
@@ -14,11 +14,13 @@ export const projects = [
     },
     {
         name: 'fb Reactions',
+        image: '../assets/fb-reacts.png',
         description: 'While hovering it will show the fb reactions',
-        livePreview:''
+        livePreview:'https://fb-reactions.surge.sh/'
     },
     {
         name: 'Pokedex',
+        image: '../assets/pokedex.png',
         description: 'Fetched datas are shown in card format, where the user can search, paginate',
         livePreview: ''
     },

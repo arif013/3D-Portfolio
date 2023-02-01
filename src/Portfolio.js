@@ -55,26 +55,25 @@ export default class Portfolio extends App{
         }
     }
     control(){
-        // Hover function for cube1
         let arif=document.getElementById('arif')
+
         arif.addEventListener('mouseover',()=>{
+            this.torusSetup()
+
+        // Hover function for cube1
             this.cubes.forEach(element => {
                 element.position.set(50,15,10)
                 element.rotation.x = Math.PI/2
             });
-            
-        })
+
         // Hover function for cube2
-        arif.addEventListener('mouseover',()=>{
             this.cubes2.forEach(element => {
                 element.position.set(35,15,10)
                 element.rotation.x = 3*Math.PI/4
             });
-            
-        })
 
         // Hover function for cube3
-        arif.addEventListener('mouseover',()=>{
+            // this.torusSetup()
             this.cubes3.forEach(element => {
                 element.position.set(45,10,10)
                 element.rotation.x = 5*Math.PI/4
@@ -88,24 +87,26 @@ export default class Portfolio extends App{
     }
 
     // Scroll animation for the torus
-    // scroll(){
-    //     var scrollPos = 0;
+    scroll(){
+        var scrollPos = 0;
         
-    //     document.addEventListener('scroll',()=>{
-    //     // adding scroll event
-    //     // detects new state and compares it with the new one
-    //     if ((document.body.getBoundingClientRect()).top > scrollPos){
-    //         this.torus.rotation.y+=0.0075
-    //         this.torus.position.z+=0.0007
-    //         this.torus.position.x+=0.0001
-    //     }
-	//     else{
-    //         this.torus.rotation.y-=0.0075
-    //         this.torus.position.z-=0.0007
-    //         this.torus.position.x-=0.0001
-    //     }
-	// // saves the new position for iteration.
-	//     scrollPos = (document.body.getBoundingClientRect()).top;
-    //     });
-    // }
+        document.addEventListener('scroll',()=>{
+        // adding scroll event
+        // detects new state and compares it with the new one
+        this.cubes.forEach(element=>{
+            element.rotation.x += Math.random()* 0.0004
+            element.rotation.y += Math.random()* 0.0004
+
+        })
+        this.cubes2.forEach(element=>{
+            element.rotation.x += Math.random()* 0.0001
+            element.rotation.y += Math.random()* 0.0001
+        })
+        this.cubes3.forEach(element=>{
+            element.rotation.x += Math.random()* 0.0001
+            element.rotation.y += Math.random()* 0.0001
+        })
+	// saves the new position for iteration.
+        });
+    }
 }
